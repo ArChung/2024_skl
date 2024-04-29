@@ -1,0 +1,43 @@
+{
+  // Place your vite-tailwind-sass-router 工作區 snippets here. Each snippet is defined under a snippet name and has a scope, prefix, body and
+  // description. Add comma separated ids of the languages where the snippet is applicable in the scope field. If scope
+  // is left empty or omitted, the snippet gets applied to all languages. The prefix is what is
+  // used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
+  // $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders.
+  // Placeholders with the same ids are connected.
+  // Example:
+  "imgs": {
+    "scope": "html",
+    "prefix": "imgs",
+    "body": ["<img src=\"@/assets/imgs/$1\" class=\"$2\" >"],
+    "description": "imgs"
+  },
+  "new templete wuth vue": {
+    "scope": "vue,html",
+    "prefix": "vbase",
+    "body": [
+      "<template>",
+      "\t<div></div>",
+      "</template>",
+      "",
+      "<script setup>",
+      "</script>",
+      "",
+      "<style lang=\"sass\" scoped>",
+      "</style>"
+    ],
+    "description": "vbase"
+  },
+  "ga page": {
+    "scope": "css,vue,html",
+    "prefix": "gp",
+    "body": [" gaPage\" data-ga=\"$1\""],
+    "description": "vbase"
+  },
+  "ga click": {
+    "scope": "css,vue,html",
+    "prefix": "gc",
+    "body": [" gBtn\" data-g=\"$1\""],
+    "description": "vbase"
+  }
+}

@@ -1,0 +1,21 @@
+@import 'tailwindcss/base'
+@import 'tailwindcss/components'
+@import 'tailwindcss/utilities'
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Noto+Sans+TC:wght@400;700&display=swap')
+
+html
+  background-color: #EAEAEA
+  overflow-x: hidden
+  overflow-y: scroll
+
+.animate-bounce-r
+  animation: bounce 1s infinite
+
+@keyframes bounce
+  0%, 100%
+    transform: translateX(15%)
+    animation-timing-function: cubic-bezier(0.8, 0, 1, 1)
+
+  50%
+    transform: translateX(0)
+    animation-timing-function: cubic-bezier(0, 0, 0.2, 1)
