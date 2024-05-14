@@ -1,5 +1,5 @@
 <template>
-  <div id="rule" ref="target">
+  <div id="product" ref="target">
     <div class="container flex flex-col items-center relative px-8 md:px-0">
       <!-- line -->
       <div class="flex w-full items-end justify-center space-x-6 py-12">
@@ -7,26 +7,26 @@
         <img src="@/assets/imgs/line2.png" class="flex-grow md:hidden" />
       </div>
 
-      <div class="relative pt-36 pb-36 bg-full flex flex-col justify-center items-center md:py-12 md:w-full" :style="{ backgroundImage: `url(${getUrl('content1_bg.png')})` }">
+      <div class="ani-f-b relative pt-36 pb-36 bg-full flex flex-col justify-center items-center md:py-12 md:w-full" :style="{ backgroundImage: `url(${getUrl('content1_bg.png')})` }">
         <div class="font-bold text-red text-2xl">|<span class="mx-4">保險商品</span>|</div>
         <div class="px-24 text-center leading-[2.5em] text-lg mt-8 md:px-0 md:leading-loose">逐夢的路上，<br class="hidden md:block" />您可以為自己準備更多穩健方案， <br />選擇適合的保單內容，<br class="hidden md:block" />讓逐夢的路上能走得更踏實</div>
       </div>
 
-      <Cards></Cards>
+      <Cards class="ani-f-b"></Cards>
 
-      <div class="pb-12 pt-32 flex justify-center relative w-full md:pb-12">
+      <div class="pb-12 pt-32 flex justify-center relative w-full md:pb-12 ani-f-b">
         <a href="#" target="_blank" class="block duration-300 hover:scale-90">
           <img src="@/assets/imgs/btn.png" class="w-[250px]" />
         </a>
-        <img src="@/assets/imgs/butterfly.png" class="absolute top-2 left-8 md:hidden" />
+        <img src="@/assets/imgs/butterfly.png" class="absolute top-2 left-8 md:hidden ani-f-b" />
       </div>
     </div>
 
     <div class="w-full mt-12">
-      <img src="@/assets/imgs/dancin_m.png" class="hidden md:block" />
+      <img src="@/assets/imgs/dancin_m.png" class="hidden md:block ani-f-b" />
       <div class="container relative md:hidden">
         <img src="@/assets/imgs/line2.png" class="" />
-        <img src="@/assets/imgs/dancin.png" class="absolute left-1/2 ml-[200px] top-0 -translate-y-1/2" />
+        <img src="@/assets/imgs/dancin.png" class="absolute left-1/2 ml-[200px] top-0 mt-[-250px] ani-f-r" />
       </div>
       <div class="bg-full mt-10" :style="{ backgroundImage: `url(${getUrl('bg4.png')})` }">
         <div class="container py-20 text-center">
@@ -47,10 +47,11 @@
 
 <script setup>
 import { getUrl } from '@/utils';
-import { computed, reactive, ref } from 'vue';
+import { computed, reactive, ref, onMounted } from 'vue';
 import { useMediaQuery, useParallax } from '@vueuse/core';
 import Cards from './Cards.vue';
-
+import useGsap from '@/utils/useGsap';
+const { initAnimation, staggerFromScale } = useGsap();
 const target = ref(null);
 const isMobile = useMediaQuery('(max-width: 700px)');
 const parallax = reactive(useParallax(target));
@@ -82,9 +83,11 @@ const cardStyle = computed(() => ({
 // const { initAnimation, staggerFromScale } = useGsap();
 // const showRule = ref(false);
 
-// onMounted(() => {
-//   initAnimation('#intro');
-// });
+onMounted(() => {
+  setTimeout(() => {
+    initAnimation('#product');
+  }, 10);
+});
 </script>
 
 <style lang="sass" scoped></style>

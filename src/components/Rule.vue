@@ -3,11 +3,11 @@
     <div class="container flex flex-col items-center relative px-8 md:px-0">
       <!-- 01.活動說明 -->
       <div class="font-bold text-red text-2xl">|<span class="mx-4">活動說明</span>|</div>
-      <img src="@/assets/imgs/line.png" class="py-8 md:hidden" />
-      <img src="@/assets/imgs/line2.png" class="py-8 hidden md:block" />
+      <img src="@/assets/imgs/line.png" class="py-8 md:hidden ani-f-b" />
+      <img src="@/assets/imgs/line2.png" class="py-8 hidden md:block ani-f-b" />
 
       <div class="flex space-x-8 relative z-10 bg-full md:flex-col md:space-x-0" :style="{ backgroundImage: isMobile ? `url(${getUrl('bg_m.png')})` : `` }">
-        <div class="relative w-[45%] md:w-full">
+        <div class="relative w-[45%] md:w-full ani-f-l">
           <div class="text-white bg-full pl-6 pr-9 pt-2 pb-4 absolute top-0 left-24 md:left-8" :style="{ backgroundImage: `url(${getUrl('title-img.png')})` }">活動時程</div>
           <div class="text-[#6D7278] bg-full pl-24 pr-20 pt-20 pb-20 md:px-8 md:pb-12" :style="{ backgroundImage: isMobile ? `` : `url(${getUrl('title-bg.png')})` }">
             <ul class="list-disc space-y-3 pl-4">
@@ -23,7 +23,7 @@
           </div>
         </div>
 
-        <div class="relative w-[55%] mt-20 md:w-full md:mt-0">
+        <div class="relative w-[55%] mt-20 md:w-full md:mt-0 ani-f-r">
           <div class="text-white bg-full pl-6 pr-9 pt-2 pb-4 absolute top-0 left-24 md:left-8" :style="{ backgroundImage: `url(${getUrl('title-img.png')})` }">活動標準</div>
           <div class="text-[#6D7278] bg-full pl-24 pr-20 pt-20 pb-20 md:px-8" :style="{ backgroundImage: isMobile ? '' : `url(${getUrl('titlebg2.png')})` }">
             <div class="text-red font-bold -ml-4">•夢想創意性 25%</div>
@@ -38,8 +38,8 @@
       </div>
 
       <!-- 02.插圖 -->
-      <img src="@/assets/imgs/content3_m.png" class="hidden md:block relative z-10 -mt-12" />
-      <div class="relative -mt-24 inline-block md:hidden">
+      <img src="@/assets/imgs/content3_m.png" class="hidden md:block relative z-10 -mt-12 ani-f-b" />
+      <div class="relative -mt-24 inline-block md:hidden ani-f-b">
         <img src="@/assets/imgs/content3_1.png" class="" :style="layerStyle(10)" />
         <img src="@/assets/imgs/content3_2.png" class="absolute w-full top-0 left-0 bg-contain" :style="layerStyle(-30)" />
         <img src="@/assets/imgs/content3_3.png" class="absolute w-full top-0 left-0 bg-contain" :style="layerStyle(-50)" />
@@ -51,10 +51,10 @@
 
       <!-- 03. 活動辦法  -->
       <div class="font-bold text-red text-2xl mt-12">|<span class="mx-4">活動說明</span>|</div>
-      <img src="@/assets/imgs/line.png" class="py-8 md:hidden" />
-      <img src="@/assets/imgs/line2.png" class="py-8 hidden md:block mx-auto w-[90%]" />
+      <img src="@/assets/imgs/line.png" class="py-8 md:hidden ani-f-b" />
+      <img src="@/assets/imgs/line2.png" class="py-8 hidden md:block mx-auto w-[90%] ani-f-b" />
 
-      <div class="px-12 w-full">
+      <div class="px-12 w-full ani-f-b">
         <div class="border-red w-full h-[350px] overflow-y-scroll border scrollbar-thin scrollbar-thumb-teal-3 scrollbar-track-gray-900 scrollbar-thumb-rounded-full">
           <div class="p-8 bg-[#FFF9EC]">
             <h1 class="text-2xl font-bold mb-4 text-red">青春逐夢計畫活動辦法</h1>
@@ -95,8 +95,10 @@
 
 <script setup>
 import { getUrl } from '@/utils';
-import { computed, reactive, ref } from 'vue';
+import { computed, reactive, ref, onMounted } from 'vue';
 import { useMediaQuery, useParallax } from '@vueuse/core';
+import useGsap from '@/utils/useGsap';
+const { initAnimation, staggerFromScale } = useGsap();
 
 const target = ref(null);
 const isMobile = useMediaQuery('(max-width: 700px)');
@@ -129,9 +131,11 @@ const cardStyle = computed(() => ({
 // const { initAnimation, staggerFromScale } = useGsap();
 // const showRule = ref(false);
 
-// onMounted(() => {
-//   initAnimation('#intro');
-// });
+onMounted(() => {
+  setTimeout(() => {
+    initAnimation('#rule');
+  }, 10);
+});
 </script>
 
 <style lang="sass" scoped></style>
