@@ -6,13 +6,14 @@ import { isMobile } from "@/utils";
 gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
 
 export default () => {
-  const scrollTriggerStart = isMobile ? 150 : 300;
+  const scrollTriggerStart = isMobile ? 200 : 300;
 
   const initAnimation = (_parent, _el = ".ani-el") => {
-    const _offset = 30;
+    
+    const _offset = 50;
     const getConfig = (el) => {
       return {
-        duration: 1.2,
+        duration: 1.5,
         opacity: 0,
         ease: "Power4.easeOut",
         scrollTrigger: {

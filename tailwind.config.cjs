@@ -3,6 +3,12 @@ module.exports = {
  
   content: ["./public/**/*.html", "./src/**/*.{js,jsx,ts,tsx,vue}"],
   theme: {
+    backgroundSize: {
+      'auto': 'auto',
+      'cover': 'cover',
+      'contain': 'contain',
+      'full': '100% 100%',
+    },
     fontFamily: {
       'sans': ['Noto Sans TC'],
       'bebas': ['Bebas Neue'],
@@ -31,6 +37,9 @@ module.exports = {
         DEFAULT:'#C49E73',
         1:'#C1877D',
       },  
+      red:{
+        DEFAULT:"#FF0A00"
+      },
       linear:{
         1: '#00142C',
         2: '#00637B',
@@ -66,8 +75,9 @@ module.exports = {
     },
   },
   plugins: [
+    require('tailwind-scrollbar'),
     require("@tailwindcss/line-clamp"),
     require("@tailwindcss/aspect-ratio"),
-    require("tailwindcss-textshadow"),
+    require("tailwindcss-textshadow")
   ],
 };

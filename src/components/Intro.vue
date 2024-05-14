@@ -1,89 +1,77 @@
 <template>
-  <div class="container" id="intro">
-    <!-- intro -->
-    <div
-      class="flex space-x-12 py-12 ani-f-b md:flex-col md:space-x-0 gaPage"
-      data-ga="活動辦法"
-    >
-      <div class="font-bebas w-full flex items-end">
-        <div>
-          <div class="text-6xl border-text tracking-wider">2022</div>
-          <div class="linear-text-1 text-9xl -ml-2 md:text-7xl">12.16</div>
+  <div class="pt-36 pb-96 bg-[#FFF9EC] relative md:pb-0" id="intro">
+    <!-- section1 -->
+    <div class="flex flex-col items-center relative">
+      <!-- title1 -->
+      <div class="relative z-10 ani-f-r">
+        <div class="relative">
+          <div class="text-red absolute top-2/3 -translate-y-1/2 text-center w-full text-3xl leading-relaxed font-bold md:text-[6vw] md:translate-y-[-60%]">給每一個正在<br class="hidden md:block" />夢想路上努力的你</div>
+          <img src="@/assets/imgs/title1_bg.png" class="md:hidden" />
+          <img src="@/assets/imgs/title1_b_m.png" class="hidden md:block" />
         </div>
-        <div class="linear-text-1 text-9xl md:text-7xl mx-3">-</div>
-        <div>
-          <div class="text-6xl border-text tracking-wider">2023</div>
-          <div class="linear-text-1 text-9xl -ml-2 md:text-7xl">1.15</div>
-        </div>
+        <img src="@/assets/imgs/title1_1.png" class="ani-f-r absolute top-0 left-0 md:-mt-16 md:scale-50 md:left-12" />
+        <img src="@/assets/imgs/title1_4.png" class="ani-f-r absolute -bottom-6 -left-48 md:hidden" />
+        <img src="@/assets/imgs/title1_3.png" class="ani-f-r absolute -right-36 -bottom-16 md:scale-50 md:-right-12 md:-bottom-0" />
       </div>
-      <div class="w-full text-xl text-teal-3 leading-relaxed pb-4 pt-16">
-        挑戰風味極致、突破品酩佐饌體驗，格蘭利威持續號召「台味覺醒」！攜手全台29家指標酒吧及餐酒館推出全新一波《台味星指南》，特色酒食搭配格蘭利威12年首席三桶，再次為你帶來味蕾感官的創新體驗。
-      </div>
-    </div>
-
-    <!-- wines -->
-    <div
-      class="flex pt-20 pb-3 border-t border-gold md:flex-col md:py-12 gaPage"
-      data-ga="活動辦法-12年"
-    >
-      <div class="relative max-w-1/2 w-full">
-        <img src="@/assets/imgs/rulePic1.png" class="ani-f-l" />
-      </div>
-      <div class="grow relative z-10 flex flex-col items-start">
-        <div
-          class="linear-text-4 font-bebas whitespace-nowrap leading-[.9em] -translate-x-16 text-[7rem] pt-0 tracking-wider ani-f-b md:text-[17vw] md:-translate-x-0 md:pt-0"
-        >
-          THE GLENLIVET<br />
-          12 YEAR OLD
+      <!-- content1 -->
+      <div class="relative -mt-24 w-full max-w-5xl">
+        <div class="bg-full pt-36 pb-52 px-24 text-center leading-[2.5em] text-lg md:px-8 md:pt-32 md:leading-loose" :style="{ backgroundImage: `url(${getUrl('content1_bg.png')})` }">
+          每個生日吹蠟燭時許的心願，每個新年年初洋洋灑灑寫下想完成的人生里程，<br />
+          我們相信，每一個夢想都值得被實現，<br class="hidden md:block" />每一份努力都值得被肯定。 <br />
+          無論你的夢想是什麼，<br class="hidden md:block" />無論你正面臨的挑戰有多少， <br />
+          新光人壽都願意與你攜手同行，<br class="hidden md:block" />提供助力為你的夢想保駕護航。
         </div>
-
-        <div
-          class="text-xl text-teal-3 leading-relaxed pt-8 pl-12 ani-f-b md:pl-0 md:pt-6"
-        >
-          <div class="text-2xl font-bold mb-4">第一重</div>
-          至合作酒吧及餐酒館內用，並加入「保樂力加酩家沙龍」LINE官方帳號，即可品飲格蘭利威12年首席三桶威士忌乙杯。（含純飲或high
-          ball）
-          <div class="mt-4 text-teal-1 md:mt-4 text-base">
-            ※數量有限，兌/贈完即止
-          </div>
-        </div>
-        <div
-          class="text-xl text-teal-3 leading-relaxed pt-8 pl-12 ani-f-b md:pl-0 md:pt-6"
-        >
-          <div class="text-2xl font-bold mb-4">第二重</div>
-          至合作酒吧及餐酒館點購格蘭利威12年首席三桶威士忌2杯（含純飲或high
-          ball），即贈店家招牌下酒菜乙份。
-          <div class="mt-4 text-teal-1 md:mt-4 text-base">
-            ※下酒菜依各酒吧及餐酒館提供為主，數量有限，兌/贈完即止
-          </div>
-        </div>
+        <img src="@/assets/imgs/title1_2.png" class="absolute -left-12 bottom-12 md:scale-75 md:bottom-0 md:-mb-12" />
+        <img src="@/assets/imgs/title1_5.png" class="absolute right-14 top-1/2 mt-4 md:scale-50 md:top-3/4 md:mt-12" />
+        <img src="@/assets/imgs/title1_6.png" class="absolute right-0 top-1/2 -mt-6 md:scale-50 md:top-3/4 md:mt-12 md:right-8" />
+        <img src="@/assets/imgs/title1_4.png" class="hidden md:block absolute bottom-24 -right-24 scale-50" />
       </div>
     </div>
 
-    <div class="flex py-12 justify-center">
-      <div
-        class="bg-linear-1 font-bold text-2xl text-center text-white w-full max-w-lg py-4 tracking-widest cursor-pointer duration-300 hover:opacity-80 ani-f-b md:text-base md:py-2 gBtn"
-        data-g="詳細活動辦法"
-        @click="showRule = true"
-      >
-        活動辦法
+    <!-- section2 -->
+    <div class="relative">
+      <div class="relative z-20">
+        <div class="flex justify-center">
+          <div class="relative">
+            <div class="text-red absolute top-2/3 -translate-y-1/2 text-center w-full text-3xl font-bold">如果你...</div>
+            <img src="@/assets/imgs/title2_bg.png" class="md:hidden" />
+            <img src="@/assets/imgs/title1_b_m.png" class="hidden md:block" />
+          </div>
+        </div>
+        <div class="relative flex w-full justify-center max-w-[1200px] mx-auto -mt-10 md:flex-col">
+          <img src="@/assets/imgs/pop1.png" class="block w-1/3 translate-x-8 -translate-y-24 md:w-[90%] md:translate-y-0" />
+          <img src="@/assets/imgs/pop2.png" class="block w-1/3 md:w-[90%] md:-mt-6" />
+          <img src="@/assets/imgs/pop3.png" class="block w-1/3 -translate-x-8 -translate-y-28 md:w-[90%] md:translate-y-0 md:translate-x-10 md:-mt-4" />
+        </div>
       </div>
+
+      <!-- content1 -->
+      <div class="relative -mt-32 w-full max-w-5xl z-10 mx-auto md:-mt-12">
+        <div class="bg-full pt-64 pb-64 px-24 text-center leading-[2em] text-3xl text-red font-bold md:text-[5vw] md:px-8 md:pt-24 md:pb-24" :style="{ backgroundImage: `url(${getUrl('content1_bg.png')})` }">快來投稿吧！<br />讓我們一起為夢想而努力，<br />為青春而燦爛，期待您的參與！</div>
+        <img src="@/assets/imgs/title2_01.png" class="absolute top-16 left-32 md:hidden" />
+        <img src="@/assets/imgs/title2_02.png" class="absolute top-1/2 left-36 md:hidden" />
+        <img src="@/assets/imgs/title2_03.png" class="absolute top-1/2 mt-8 left-12 md:hidden" />
+        <img src="@/assets/imgs/title2_04.png" class="absolute top-52 left-16 md:hidden" />
+        <img src="@/assets/imgs/title2_05.png" class="absolute top-0 left-1/2 -ml-12 md:hidden" />
+        <img src="@/assets/imgs/title2_06.png" class="absolute bottom-32 -left-32 md:hidden" />
+      </div>
+
+      <img src="@/assets/imgs/index_10_m.png" class="w-full -mt-24 hidden md:block relative z-10" />
+      <img src="@/assets/imgs/title3_bg.png" class="w-full -mt-12 md:hidden" />
     </div>
   </div>
-  <Transition name="fade">
-    <RulePop v-show="showRule" @close="showRule = false"></RulePop>
-  </Transition>
 </template>
 
 <script setup>
-import { onMounted, ref } from 'vue';
-import RulePop from './RulePop.vue';
+import { getUrl } from '@/utils';
+import { onMounted } from 'vue';
 import useGsap from '@/utils/useGsap';
 const { initAnimation, staggerFromScale } = useGsap();
-const showRule = ref(false);
 
 onMounted(() => {
-  initAnimation('#intro');
+  setTimeout(() => {
+    initAnimation('#intro');
+  }, 10);
 });
 </script>
 
