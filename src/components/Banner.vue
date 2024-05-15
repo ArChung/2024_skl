@@ -11,7 +11,6 @@ const container = ref(null);
 const parallax = reactive(useParallax(container));
 const { tilt, roll, source } = useParallax(container);
 
-const test = '';
 const layerBase = {
   position: 'absolute',
   transition: '.3s ease-out all',
