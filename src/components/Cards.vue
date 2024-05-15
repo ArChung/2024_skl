@@ -1,73 +1,76 @@
 <template>
-  <div class="flex space-x-8 justify-center w-full -mt-16 relative z-10 md:mt-0 md:flex-col md:space-x-0 md:items-center md:space-y-6 px-8">
-    <a href="#" class="card" :style="{ backgroundImage: `url(${getUrl('p_bg01.png')})` }">
-      <div class="tag bg-[#FF6C23]">
-        意外保障
-        <div class="arr border-r-[#C14E01] border-t-[#C14E01]"></div>
-      </div>
-
-      <img src="@/assets/imgs/pro1.png" class="" />
-      <div class="t1">新光人壽Go平安終身傷害保險</div>
-      <div class="t2">
-        <div class="note from-[#F39800] to-[#FF5500]">終身保障</div>
-        <div class="price">每年$4,500 起</div>
-      </div>
-
-      <div class="flex justify-center">
-        <div class="btn">
-          我有興趣
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-            <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
-          </svg>
+  <div>
+    <div class="flex space-x-8 justify-center w-full -mt-16 relative z-10 md:mt-0 md:flex-col md:space-x-0 md:items-center md:space-y-6 px-8">
+      <a href="https://www.skl.com.tw/content.html?insId=WDA" target="_blank" class="card" :style="{ backgroundImage: `url(${getUrl('p_bg01.png')})` }">
+        <div class="tag bg-[#FF6C23]">
+          意外保障
+          <div class="arr border-r-[#C14E01] border-t-[#C14E01]"></div>
         </div>
-      </div>
-    </a>
 
-    <a href="#" class="card" :style="{ backgroundImage: `url(${getUrl('p_bg02.png')})` }">
-      <div class="tag bg-[#E6A904]">
-        壽險保障
-        <div class="arr border-r-[#C14E01] border-t-[#C14E01]"></div>
-      </div>
-
-      <img src="@/assets/imgs/pro2.png" class="" />
-      <div class="t1">新光人壽Go普惠new定期保險</div>
-      <div class="t2">
-        <div class="note from-[#F7C94B] to-[#E6A904]">十年滿期領回</div>
-        <div class="price">每年$11,100 起</div>
-      </div>
-
-      <div class="flex justify-center">
-        <div class="btn">
-          我有興趣
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-            <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
-          </svg>
+        <img src="@/assets/imgs/pro1.png" class="" />
+        <div class="t1">新光人壽Go平安終身傷害保險</div>
+        <div class="t2">
+          <div class="note from-[#F39800] to-[#FF5500]">終身保障</div>
+          <div class="price">每年$4,500 起</div>
         </div>
-      </div>
-    </a>
 
-    <a href="#" class="card" :style="{ backgroundImage: `url(${getUrl('p_bg03.png')})` }">
-      <div class="tag bg-[#31B2B3]">
-        意外保障
-        <div class="arr border-r-[#248B8B] border-t-[#248B8B]"></div>
-      </div>
-
-      <img src="@/assets/imgs/pro3.png" class="" />
-      <div class="t1">新光人壽安心守護手術醫療<br />終身健康保險</div>
-      <div class="t2">
-        <div class="note from-[#31B2B3] to-[#248B8B]">終身保障</div>
-        <div class="price">每年$3,744 起</div>
-      </div>
-
-      <div class="flex justify-center">
-        <div class="btn">
-          我有興趣
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-            <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
-          </svg>
+        <div class="flex justify-center">
+          <div class="btn">
+            我有興趣
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+              <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+            </svg>
+          </div>
         </div>
-      </div>
-    </a>
+      </a>
+
+      <a href="https://www.skl.com.tw/content.html?insId=WFA" target="_blank" class="card" :style="{ backgroundImage: `url(${getUrl('p_bg02.png')})` }">
+        <div class="tag bg-[#E6A904]">
+          壽險保障
+          <div class="arr border-r-[#C14E01] border-t-[#C14E01]"></div>
+        </div>
+
+        <img src="@/assets/imgs/pro2.png" class="" />
+        <div class="t1">新光人壽Go普惠new定期保險</div>
+        <div class="t2">
+          <div class="note from-[#F7C94B] to-[#E6A904]">十年滿期領回</div>
+          <div class="price">每年$11,100 起</div>
+        </div>
+
+        <div class="flex justify-center">
+          <div class="btn">
+            我有興趣
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+              <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+            </svg>
+          </div>
+        </div>
+      </a>
+
+      <a href="https://www.skl.com.tw/content.html?insId=NQA" target="_blank" class="card" :style="{ backgroundImage: `url(${getUrl('p_bg03.png')})` }">
+        <div class="tag bg-[#31B2B3]">
+          意外保障
+          <div class="arr border-r-[#248B8B] border-t-[#248B8B]"></div>
+        </div>
+
+        <img src="@/assets/imgs/pro3.png" class="" />
+        <div class="t1">新光人壽安心守護手術醫療<br />終身健康保險</div>
+        <div class="t2">
+          <div class="note from-[#31B2B3] to-[#248B8B]">終身保障</div>
+          <div class="price">每年$3,744 起</div>
+        </div>
+
+        <div class="flex justify-center">
+          <div class="btn">
+            我有興趣
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+              <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+            </svg>
+          </div>
+        </div>
+      </a>
+    </div>
+    <div class="text-xs px-8 my-4">以上費用以30歲女性最低保額為例，實際保障內容依保單條款為主，有任何保單相關問題，請洽新光人壽業務員</div>
   </div>
 </template>
 

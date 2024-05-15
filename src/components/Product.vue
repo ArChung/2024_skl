@@ -13,11 +13,10 @@
       </div>
 
       <Cards class="ani-f-b"></Cards>
-
-      <div class="pb-12 pt-32 flex justify-center relative w-full md:pb-12 ani-f-b">
-        <a href="#" target="_blank" class="block duration-300 hover:scale-90">
+      <div class="pb-12 pt-32 flex justify-center relative w-full md:pb-12 ani-f-b md:hidden">
+        <!-- <a href="#" target="_blank" class="block duration-300 hover:scale-90">
           <img src="@/assets/imgs/btn.png" class="w-[250px]" />
-        </a>
+        </a> -->
         <img src="@/assets/imgs/butterfly.png" class="absolute top-2 left-8 md:hidden ani-f-b" />
       </div>
     </div>
