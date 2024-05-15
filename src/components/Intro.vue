@@ -56,7 +56,7 @@
         <img src="@/assets/imgs/title2_06.png" class="absolute bottom-32 -left-32 md:hidden ani-f-b" />
       </div>
 
-      <img src="@/assets/imgs/index_10_m.png" class="w-full -mt-24 hidden md:block relative z-10" />
+      <img src="@/assets/imgs/index_10_m.png" class="w-full -mt-24 hidden md:block relative z-10 ani-f-b" />
       <img src="@/assets/imgs/title3_bg.png" class="w-full -mt-12 md:hidden" />
     </div>
   </div>
