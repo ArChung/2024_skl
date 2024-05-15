@@ -1,9 +1,6 @@
 <template>
   <div class="sence relative h-[1000px]" ref="container">
-    <div
-      class="bg-gold w-32 h-32 absolute left-1/2 top-1/2"
-      :style="layer0"
-    ></div>
+    <div class="bg-gold w-32 h-32 absolute left-1/2 top-1/2" :style="layer0"></div>
   </div>
 </template>
 
@@ -14,6 +11,7 @@ const container = ref(null);
 const parallax = reactive(useParallax(container));
 const { tilt, roll, source } = useParallax(container);
 
+const test = '';
 const layerBase = {
   position: 'absolute',
   transition: '.3s ease-out all',
@@ -22,9 +20,7 @@ const layerBase = {
 const _LEVEL0 = -40;
 const layer0 = computed(() => ({
   ...layerBase,
-  transform: `translateX(${parallax.tilt * _LEVEL0}px) translateY(${
-    parallax.roll * _LEVEL0
-  }px) scale(1.33)`,
+  transform: `translateX(${parallax.tilt * _LEVEL0}px) translateY(${parallax.roll * _LEVEL0}px) scale(1.33)`,
 }));
 
 // import { getUrl } from '@/utils/index.js';
