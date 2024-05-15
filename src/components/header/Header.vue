@@ -4,7 +4,9 @@
       <img src="@/assets/imgs/logo.png" alt="" srcset="" class="h-full" />
     </nav>
 
-    <img src="@/assets/imgs/m_index.png" class="hidden md:block" />
+    <div class="min-h-[60vh] hidden md:block">
+      <img src="@/assets/imgs/m_index.png" class="" />
+    </div>
 
     <div class="flex-grow w-full overflow-hidden md:hidden" :style="containerStyle">
       <div class="h-full w-full bg-cover bg-center index_banner" :style="[{ backgroundImage: `url(${getUrl('index_01.png')})` }, cardStyle]">
