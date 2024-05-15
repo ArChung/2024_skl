@@ -27,7 +27,7 @@
         <img src="@/assets/imgs/title1_4.png" class="hidden md:block absolute bottom-24 -right-24 scale-50" />
       </div>
     </div>
-
+    123
     <!-- section2 -->
     <div class="relative">
       <div class="relative z-20">
