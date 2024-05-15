@@ -36,7 +36,7 @@ import { computed, reactive, ref } from 'vue';
 import { useMediaQuery, useParallax } from '@vueuse/core';
 
 const target = ref(null);
-const isMobile = useMediaQuery('(max-width: 700px)');
+const isMobile = useMediaQuery('(max-width: 768px)');
 const parallax = reactive(useParallax(target));
 
 const layerBase = {

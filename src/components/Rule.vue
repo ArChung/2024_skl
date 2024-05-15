@@ -101,7 +101,7 @@ import useGsap from '@/utils/useGsap';
 const { initAnimation, staggerFromScale } = useGsap();
 
 const target = ref(null);
-const isMobile = useMediaQuery('(max-width: 700px)');
+const isMobile = useMediaQuery('(max-width: 768px)');
 const parallax = reactive(useParallax(target));
 
 const layerBase = {

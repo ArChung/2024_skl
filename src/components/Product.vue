@@ -11,23 +11,18 @@
         <div class="font-bold text-red text-2xl">|<span class="mx-4">保險商品</span>|</div>
         <div class="px-24 text-center leading-[2.5em] text-lg mt-8 md:px-0 md:leading-loose">逐夢的路上，<br class="hidden md:block" />您可以為自己準備更多穩健方案， <br />選擇適合的保單內容，<br class="hidden md:block" />讓逐夢的路上能走得更踏實</div>
       </div>
-
-      <Cards class="ani-f-b"></Cards>
-      <div class="pb-12 pt-32 flex justify-center relative w-full md:pb-12 ani-f-b md:hidden">
-        <!-- <a href="#" target="_blank" class="block duration-300 hover:scale-90">
-          <img src="@/assets/imgs/btn.png" class="w-[250px]" />
-        </a> -->
-        <img src="@/assets/imgs/butterfly.png" class="absolute top-2 left-8 md:hidden ani-f-b" />
-      </div>
     </div>
-
-    <div class="w-full mt-12">
+    <div class="container">
+      <Cards class="ani-f-b"></Cards>
+    </div>
+    <div class="w-full bg-full -mt-[150px] pt-[160px]" :style="{ backgroundImage: `url(${getUrl('bg4.png')})` }">
       <img src="@/assets/imgs/dancin_m.png" class="hidden md:block ani-f-b" />
       <div class="container relative md:hidden">
-        <img src="@/assets/imgs/line2.png" class="" />
-        <img src="@/assets/imgs/dancin.png" class="absolute left-1/2 ml-[200px] top-0 mt-[-250px] ani-f-r" />
+        <img src="@/assets/imgs/butterfly.png" class="md:hidden ani-f-b" />
+        <img src="@/assets/imgs/line2.png" class="ml-12 mt-12" />
+        <img src="@/assets/imgs/dancin.png" class="absolute left-1/2 ml-[230px] top-0 ani-f-r w-[400px]" />
       </div>
-      <div class="bg-full mt-10" :style="{ backgroundImage: `url(${getUrl('bg4.png')})` }">
+      <div class="bg-full mt-0">
         <div class="container py-20 text-center">
           <div class="font-bold text-red text-2xl">|<span class="mx-4">活動專線</span>|</div>
           <div class="px-24 leading-[2.5em] text-lg mt-8 md:px-8">
@@ -52,7 +47,7 @@ import Cards from './Cards.vue';
 import useGsap from '@/utils/useGsap';
 const { initAnimation, staggerFromScale } = useGsap();
 const target = ref(null);
-const isMobile = useMediaQuery('(max-width: 700px)');
+const isMobile = useMediaQuery('(max-width: 768px)');
 const parallax = reactive(useParallax(target));
 
 const layerBase = {
