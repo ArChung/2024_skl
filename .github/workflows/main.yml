@@ -1,11 +1,7 @@
 name: Build and Deploy
 on: [push]
 permissions:
-  actions: write       # Necessary to cancel workflow executions
-  checks: write        # Necessary to write reports
-  pull-requests: write # Necessary to comment on PRs
   contents: read
-  packages: write
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
