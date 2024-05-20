@@ -16,7 +16,7 @@
       <!-- content1 -->
       <div class="relative -mt-24 w-full max-w-5xl">
         <div class="bg-full pt-36 pb-52 px-24 text-center leading-[2.5em] text-lg md:px-8 md:pt-32 md:leading-loose ani-f-b" :style="{ backgroundImage: `url(${getUrl('content1_bg.png')})` }">
-          每個生日吹蠟燭時許的心願，每個新年年初洋洋灑灑寫下想完成的人生里程，<br />
+          每個生日吹蠟燭時許的心願，每個新年年初洋洋灑灑寫下想完成的人生里程碑，<br />
           我們相信，每一個夢想都值得被實現，<br class="hidden md:block" />每一份努力都值得被肯定。 <br />
           無論你的夢想是什麼，<br class="hidden md:block" />無論你正面臨的挑戰有多少， <br />
           新光人壽都願意與你攜手同行，<br class="hidden md:block" />提供助力為你的夢想保駕護航。

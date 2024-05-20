@@ -5,7 +5,7 @@
     </div>
     <img src="@/assets/imgs/bg3.png" class="absolute w-full top-0 left-0 md:relative md:aspect-[16/9]" />
     <div class="md:absolute bottom-0 md:w-full md:px-2" :style="containerStyle">
-      <div class="relative mt-24 inline-block max-w-3xl group cursor-pointer" :style="cardStyle">
+      <a href="https://campaign.skl.com.tw/dreams113" target="_blank" class="relative mt-24 inline-block max-w-3xl group cursor-pointer" :style="cardStyle">
         <img src="@/assets/imgs/btn01.png" class="" :style="layerStyle(10)" />
         <img src="@/assets/imgs/btn02.png" class="absolute w-full top-0 left-0 bg-contain" :style="layerStyle(-30)" />
         <img src="@/assets/imgs/btn03.png" class="absolute w-full top-0 left-0 bg-contain" :style="layerStyle(-10)" />
@@ -17,7 +17,7 @@
         <div class="absolute w-full top-0 left-0" :style="layerStyle(-60)">
           <img src="@/assets/imgs/btn07.png" class="absolute w-full top-0 left-0 bg-contain group-hover:scale-90 duration-200" />
         </div>
-      </div>
+      </a>
 
       <img src="@/assets/imgs/star3_01.png" class="absolute top-3/4 left-0 -ml-24 md:hidden" />
       <img src="@/assets/imgs/star3_02.png" class="absolute top-1/2 left-0 -ml-72 md:hidden" />

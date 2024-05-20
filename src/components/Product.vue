@@ -8,7 +8,7 @@
       </div>
 
       <div class="ani-f-b relative pt-36 pb-36 bg-full flex flex-col justify-center items-center md:py-12 md:w-full" :style="{ backgroundImage: `url(${getUrl('content1_bg.png')})` }">
-        <div class="font-bold text-red text-2xl">|<span class="mx-4">保險商品</span>|</div>
+        <div class="font-bold text-red text-2xl">|<span class="mx-4">保險商品推薦 </span>|</div>
         <div class="px-24 text-center leading-[2.5em] text-lg mt-8 md:px-0 md:leading-loose">逐夢的路上，<br class="hidden md:block" />您可以為自己準備更多穩健方案， <br />選擇適合的保單內容，<br class="hidden md:block" />讓逐夢的路上能走得更踏實</div>
       </div>
     </div>
@@ -26,8 +26,8 @@
         <div class="container py-20 text-center">
           <div class="font-bold text-red text-2xl">|<span class="mx-4">活動專線</span>|</div>
           <div class="px-24 leading-[2.5em] text-lg mt-8 md:px-8">
-            若您在投稿過程中有任何疑問，<br />請在平日上班時段(10:30-18:30)洽詢客服，由活動小組為您服務。<br />
-            連絡電話<a class="hover:underline" href="tel:02-2627-7067">02-2627-7067#1222</a>或來信<a class="hover:underline" href="mailto:joan.chen@unisincere.com.tw">joan.chen@unisincere.com.tw</a>
+            若您在投稿過程中有任何疑問，<br />請在平日上班時段(09:00-17:00)洽詢客服，由活動小組為您服務。<br />
+            連絡電話<a class="hover:underline" href="tel:02-2627-7067">02-2389-5858#7281 #7286 </a>或來信<a class="hover:underline" href="mailto:dreams@skl.com.tw">dreams@skl.com.tw</a>
           </div>
         </div>
       </div>
