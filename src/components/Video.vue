@@ -1,8 +1,9 @@
 <template>
   <div id="video" class="relative flex flex-col items-center pb-24 -mt-48 md:mt-0 md:mb-12" ref="target">
     <div class="w-full px-12 max-w-5xl relative z-10 -mt-52 md:px-0 md:mt-0 ani-f-b">
-      <iframe class="w-full aspect-[16/9] shadow-xl" src="https://www.youtube.com/embed/6zTGay6bmaU?si=qargspDAEIQl8B8y&rel=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      <iframe class="w-full aspect-[16/9] shadow-xl" src="https://www.youtube.com/embed/gxN4VuQ0vUY?si=qargspDAEIQl8B8y&rel=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     </div>
+
     <img src="@/assets/imgs/bg3.png" class="absolute w-full top-0 left-0 md:relative md:aspect-[16/9]" />
     <div class="md:absolute bottom-0 md:w-full md:px-2" :style="containerStyle">
       <a href="https://campaign.skl.com.tw/dreams113" target="_blank" class="relative mt-24 inline-block max-w-3xl group cursor-pointer" :style="cardStyle">

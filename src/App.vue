@@ -5,6 +5,7 @@
     <Video></Video>
     <Rule></Rule>
     <Product></Product>
+    <a href="https://campaign.skl.com.tw/dreams113" target="_blank" class="fixed right-5 bottom-5 z-50 hover:scale-110 duration-150"> <img src="@/assets/imgs/ip.png" class="h-64 animate-scale" /> </a>
   </div>
 </template>
 

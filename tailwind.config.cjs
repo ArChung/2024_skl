@@ -24,7 +24,17 @@ module.exports = {
         xl: "1140px"
       }
     },
-    extend: {},
+    extend: {
+      keyframes: {
+        scale: {
+          '0%, 100%': { transform: 'scale(0.95)' },
+          '50%': { transform: 'scale(1)' },
+        }
+      },
+      animation: {
+        scale: 'scale 1s ease-in-out infinite',
+      }
+    },
     screens: {
       "2xl": { max: "1535px" },
       xl: { max: "1279px" },
