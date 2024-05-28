@@ -2,6 +2,7 @@ import { defineConfig } from "vite";
 import vue from "@vitejs/plugin-vue";
 import { resolve } from 'path'
 import viteImagemin from 'vite-plugin-imagemin'
+import cleanup from 'rollup-plugin-cleanup'
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -46,5 +47,14 @@ export default defineConfig({
         `, // 添加公共样式
       },
     },
+  },
+  build: {
+    rollupOptions: {
+      plugins: [
+        cleanup({
+          comments: 'none'
+        })
+      ]
+    }
   },
 });
