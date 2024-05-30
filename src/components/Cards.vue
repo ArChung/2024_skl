@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="flex space-x-8 justify-center w-full -mt-16 relative z-10 md:mt-0 md:flex-col md:space-x-0 md:items-center md:space-y-6 px-8">
-      <a href="https://www.skl.com.tw/content.html?insId=WDA" target="_blank" class="card" :style="{ backgroundImage: `url(${getUrl('p_bg01.png')})` }">
+      <a href="https://www.skl.com.tw/content.html?insId=WDA" target="_blank" class="card gBtn" data-g="product01" :style="{ backgroundImage: `url(${getUrl('p_bg01.png')})` }">
         <div class="tag bg-[#FF6C23]">
           意外保障
           <div class="arr border-r-[#C14E01] border-t-[#C14E01]"></div>
@@ -24,7 +24,7 @@
         </div>
       </a>
 
-      <a href="https://www.skl.com.tw/content.html?insId=WFA" target="_blank" class="card" :style="{ backgroundImage: `url(${getUrl('p_bg02.png')})` }">
+      <a href="https://www.skl.com.tw/content.html?insId=WFA" target="_blank" class="card gBtn" data-g="product02" :style="{ backgroundImage: `url(${getUrl('p_bg02.png')})` }">
         <div class="tag bg-[#E6A904]">
           壽險保障
           <div class="arr border-r-[#C14E01] border-t-[#C14E01]"></div>
@@ -47,7 +47,7 @@
         </div>
       </a>
 
-      <a href="https://www.skl.com.tw/content.html?insId=NQA" target="_blank" class="card" :style="{ backgroundImage: `url(${getUrl('p_bg03.png')})` }">
+      <a href="https://www.skl.com.tw/content.html?insId=NQA" target="_blank" class="card gBtn" data-g="product03" :style="{ backgroundImage: `url(${getUrl('p_bg03.png')})` }">
         <div class="tag bg-[#31B2B3]">
           意外保障
           <div class="arr border-r-[#248B8B] border-t-[#248B8B]"></div>
