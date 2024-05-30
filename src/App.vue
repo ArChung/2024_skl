@@ -5,7 +5,7 @@
     <Video></Video>
     <Rule></Rule>
     <Product></Product>
-    <a href="https://campaign.skl.com.tw/dreams2024" target="_blank" class="fixed right-5 bottom-5 z-50 hover:scale-110 duration-150"> <img src="@/assets/imgs/ip.png" class="h-64 animate-scale md:h-52" /> </a>
+    <a href="https://campaign.skl.com.tw/dreams2024" target="_blank" class="fixed right-5 bottom-5 z-50 hover:scale-110 duration-150 gBtn" data-g="float_submission_btn"> <img src="@/assets/imgs/ip.png" class="h-64 animate-scale md:h-52" /> </a>
   </div>
 </template>
 
@@ -20,15 +20,15 @@ import Product from './components/Product.vue';
 // import Restaurant from './components/restaurant/Index.vue';
 // import Age from './components/agePop/Index.vue';
 
-// import { provide, ref, onMounted } from 'vue';
-// import useGa from '@/utils/useGA.js';
+import { provide, ref, onMounted } from 'vue';
+import useGa from '@/utils/useGA.js';
 
-// const { initGABtn } = useGa();
+const { initGABtn } = useGa();
 // const showAgeCheck = ref(true);
 // provide('showAgeCheck', showAgeCheck);
-// onMounted(() => {
-//   initGABtn();
-// });
+onMounted(() => {
+  initGABtn();
+});
 </script>
 
 <style scoped lang="sass"></style>

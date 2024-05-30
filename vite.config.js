@@ -3,6 +3,7 @@ import vue from "@vitejs/plugin-vue";
 import { resolve } from 'path'
 import viteImagemin from 'vite-plugin-imagemin'
 import cleanup from 'rollup-plugin-cleanup'
+import removeConsole from "vite-plugin-remove-console";
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -32,7 +33,7 @@ export default defineConfig({
         },
       ],
     },
-  }),],
+  }), removeConsole({ includes: ["log", "warn", "error", "info"] })],
   resolve: {
     alias: {
       '@': resolve(__dirname, 'src'),

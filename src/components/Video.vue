@@ -6,7 +6,7 @@
 
     <img src="@/assets/imgs/bg3.png" class="absolute w-full top-0 left-0 md:relative md:aspect-[16/9]" />
     <div class="md:absolute bottom-0 md:w-full md:px-2" :style="containerStyle">
-      <a href="https://campaign.skl.com.tw/dreams2024" target="_blank" class="relative mt-24 inline-block max-w-3xl group cursor-pointer" :style="cardStyle">
+      <a href="https://campaign.skl.com.tw/dreams2024" target="_blank" class="relative mt-24 inline-block max-w-3xl group cursor-pointer gBtn" data-g="page_submission_btn" :style="cardStyle">
         <img src="@/assets/imgs/btn01.png" class="" :style="layerStyle(10)" />
         <img src="@/assets/imgs/btn02.png" class="absolute w-full top-0 left-0 bg-contain" :style="layerStyle(-30)" />
         <img src="@/assets/imgs/btn03.png" class="absolute w-full top-0 left-0 bg-contain" :style="layerStyle(-10)" />
