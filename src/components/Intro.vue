@@ -9,9 +9,9 @@
           <img src="@/assets/imgs/title1_bg.png" class="md:hidden" />
           <img src="@/assets/imgs/title1_b_m.png" class="hidden md:block" />
         </div>
-        <img src="@/assets/imgs/title1_1.png" class="ani-f-b absolute top-0 left-0 md:-mt-16 md:scale-50 md:left-12" />
+        <img src="@/assets/imgs/title1_1.png" class="ani-f-b absolute top-0 left-0 md:-mt-16 md:!scale-50 md:left-12" />
         <img src="@/assets/imgs/title1_4.png" class="ani-f-l absolute -bottom-6 -left-48 md:hidden" />
-        <img src="@/assets/imgs/title1_3.png" class="ani-f-r absolute -right-36 -bottom-16 md:scale-50 md:-right-12 md:-bottom-0" />
+        <img src="@/assets/imgs/title1_3.png" class="ani-f-r absolute -right-36 -bottom-16 md:!scale-50 md:-right-12 md:-bottom-0" />
       </div>
       <!-- content1 -->
       <div class="relative -mt-24 w-full max-w-5xl">
@@ -21,9 +21,9 @@
           無論你的夢想是什麼，<br class="hidden md:block" />無論你正面臨的挑戰有多少， <br />
           新光人壽都願意與你攜手同行，<br class="hidden md:block" />提供助力為你的夢想保駕護航。
         </div>
-        <img src="@/assets/imgs/title1_2.png" class="absolute -left-12 bottom-12 md:scale-75 md:bottom-0 md:-mb-12 ani-f-l" />
-        <img src="@/assets/imgs/title1_5.png" class="absolute right-14 top-1/2 mt-4 md:scale-50 md:top-3/4 md:mt-12" />
-        <img src="@/assets/imgs/title1_6.png" class="absolute right-0 top-1/2 -mt-6 md:scale-50 md:top-3/4 md:mt-12 md:right-8" />
+        <img src="@/assets/imgs/title1_2.png" class="absolute -left-12 bottom-12 md:!scale-75 md:bottom-0 md:-mb-12 ani-f-l" />
+        <img src="@/assets/imgs/title1_5.png" class="absolute right-14 top-1/2 mt-4 md:!scale-50 md:top-3/4 md:mt-12" />
+        <img src="@/assets/imgs/title1_6.png" class="absolute right-0 top-1/2 -mt-6 md:!scale-50 md:top-3/4 md:mt-12 md:right-8" />
         <img src="@/assets/imgs/title1_4.png" class="hidden md:block absolute bottom-24 -right-24 scale-50" />
       </div>
     </div>
@@ -70,7 +70,7 @@ const { initAnimation, staggerFromScale } = useGsap();
 onMounted(() => {
   setTimeout(() => {
     initAnimation('#intro');
-  }, 10);
+  }, 1000);
 });
 </script>
 
