@@ -33,6 +33,22 @@ export default () => {
     });
   };
 
+  const clickMainBtnGa = (url) => {
+    const callback = function () {
+      if (typeof(url) != 'undefined') {
+        window.location = url;
+      }
+    };
+
+    gtag('event', 'conversion', {
+      'send_to': 'AW-10877049519/FnGICKn1jLUZEK-1ysIo',
+      'event_callback': callback
+    });
+
+    console.log("click-event: MainBtn"  );
+  };
+
+  
   const clickGa = (event) => {
     event = event.replace(/\s/g, "");
     gtag("event", "click", {
@@ -56,5 +72,5 @@ export default () => {
     console.log("pageview: " + event);
   };
 
-  return { initGABtn, clickGa, pageGa };
+  return { initGABtn, clickGa, pageGa , clickMainBtnGa};
 };

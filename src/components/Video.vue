@@ -6,7 +6,7 @@
 
     <img src="@/assets/imgs/bg3.png" class="absolute w-full top-0 left-0 md:relative md:aspect-[16/9]" />
     <div class="md:absolute bottom-0 md:w-full md:px-2" :style="containerStyle">
-      <a href="https://campaign.skl.com.tw/dreams2024" target="_blank" class="relative mt-24 inline-block max-w-3xl group cursor-pointer gBtn" data-g="page_submission_btn" :style="cardStyle">
+      <a href="https://campaign.skl.com.tw/dreams2024" @click="clickMainBtnGa()" target="_blank" class="relative mt-24 inline-block max-w-3xl group cursor-pointer gBtn" data-g="page_submission_btn" :style="cardStyle">
         <img src="@/assets/imgs/btn01.png" class="" :style="layerStyle(10)" />
         <img src="@/assets/imgs/btn02.png" class="absolute w-full top-0 left-0 bg-contain" :style="layerStyle(-30)" />
         <img src="@/assets/imgs/btn03.png" class="absolute w-full top-0 left-0 bg-contain" :style="layerStyle(-10)" />
@@ -33,12 +33,14 @@ import { getUrl } from '@/utils';
 import { computed, reactive, ref, onMounted } from 'vue';
 import { useMediaQuery, useParallax } from '@vueuse/core';
 import useGsap from '@/utils/useGsap';
+import useGa from '@/utils/useGA.js';
+
 const { initAnimation, staggerFromScale } = useGsap();
 
 const target = ref(null);
 const isMobile = useMediaQuery('(max-width: 768px)');
 const parallax = reactive(useParallax(target));
-
+const { clickMainBtnGa } = useGa();
 const layerBase = {
   // position: 'absolute',
   // height: '100%',
