@@ -45,6 +45,10 @@ export default () => {
       'event_callback': callback
     });
 
+    _lt('send', 'cv', {
+      type: 'Conversion'
+    },['88d8b59f-17b9-480d-add6-2c5e5801eb50']);
+
     console.log("click-event: MainBtn"  );
   };
 
